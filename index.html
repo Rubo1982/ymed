@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper__back">
+        <header>
+            <div class="container__header">
+                <a href="./index.html" class="logo">
+                    <div class="logo__header"></div>
+                </a>
+                <ul class="header__info">
+                    <img src="./assets/image/1.svg" alt="">
+                    <li>ГОМ Пущинское СНТ Серпуховский городской округ Московская область</li>
+                </ul>
+                <ul class="nav">
+                    <li><a href="#">Номерной фонд</a></li>
+                    <li><a href="#">фермерский магазин</a></li>
+                    <li><a href="#">о нас</a></li>
+                    <li><a href="#">Окрестности</a></li>
+                    <li><a href="#">FaQ</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="open__nav">
+                    <img src="./assets/image/Frame 127.svg" alt="">
+                    <div class="dropdown">
+                        <ul class="navigation">
+                            <li><a href="#">Номерной фонд</a></li>
+                            <li><a href="#">фермерский магазин</a></li>
+                            <li><a href="#">о нас</a></li>
+                            <li><a href="#">Окрестности</a></li>
+                            <li><a href="#">FaQ</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="wrapper__info">
+                    <div class="info__to1">
+                        <h1>ДОМ НА ЛЕСНОЙ ОПУШКЕ</h1>
+                        <p>Место куда хочется вернуться снова</p>
+                    </div>
+                    <div class="info__to2">
+                        <div class="block1">
+                            <div class="content__radius">
+                                <img src="./assets/image/01.svg" alt="">
+                            </div>
+                            <span>Более 5 гектаров живописного ландшафта</span>
+                        </div>
+                        <div class="block1">
+                            <div class="content__radius">
+                                <img src="./assets/image/02.svg" alt="">
+                            </div>
+                            <span>Отдых в комфортабельных домах вдали от городского шума</span>
+                        </div>
+                        <div class="block1">
+                            <div class="content__radius">
+                                <img src="./assets/image/03.svg" alt="">
+                            </div>
+                            <span>Своя собственная ферма с натуральными продуктами</span>
+                        </div>
+                        <div class="btn">
+                            <button>Заказать звонок</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="wrapper__data">
+                    <div class="content__toUse">
+                        <div class="content__date">
+                            <label for="wrapper__date" id="dateLabel">Заезд</label>
+                            <input type="date" id="wrapper__date">
+                        </div>
+                        <div class="content__date">
+                            <label for="wrapper__date" id="dateLabel">Выезд</label>
+                            <input type="date" id="wrapper__date">
+                        </div>
+                        <div class="content__date">
+                            <label for="wrapper__date" id="dateLabel">Количество гостей</label>
+                            <select name="" id="section__select">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                            </select>
+                        </div>
+                        <div class="content__date use__to">
+                            <button class="to__usebtn">Показать наличие</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <button id="open">Submit</button>
+    <div class="con">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur magni veniam voluptate illo, odio quis
+            vel. Ratione, facere at. Officiis tempora voluptatibus consectetur labore ratione corporis quam placeat
+            minus odio!</p>
+    </div>
+
+
+    <script>
+        const button = document.getElementById('open');
+        const con = document.querySelector('.con');
+        button.addEventListener('click', function () {
+            con.style.display = (con.style.display === 'none') ? 'block' : 'none';
+        });
+
+    </script>
+</body>
+
+</html>
